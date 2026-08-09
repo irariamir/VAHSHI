@@ -19,3 +19,5 @@
 - [2026-08-09 13:13] USER.md updated: پایه = یازدهم
 - [2026-08-09 13:13] MEMORY.md appended due to important msg: پایه
 - [2026-08-09 13:13] periodic nudge at count 6
+
+- [2026-08-09 14:49] full chat history re-exported: 26 turns
