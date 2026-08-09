@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.log
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# App
+uploads/
+data/*.db
+data/*.sqlite
+
+# Arena
+.arena/

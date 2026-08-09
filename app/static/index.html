@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAHSHI — مشاور کنکور وحشی</title>
+<link rel="stylesheet" href="/static/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-blur"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">VAHSHI</span>
+        <span class="logo-sub">مشاور کنکور</span>
+      </div>
+      <div class="header-actions">
+        <span id="mode-badge" class="badge">در حال بررسی...</span>
+        <a href="https://sanjesh.org" target="_blank" class="link-sanjesh">sanjesh.org ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>وحشی، کنکور رو می‌ترکونیم! 🚀</h1>
+      <p>من <strong>VAHSHI</strong> هستم — مشاور رفیق‌ات که مثل بهترین مشاورای ایران برات برنامه می‌چینه، استرست رو کم می‌کنه و تا روز کنکور ولت نمی‌کنه.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>24/7</strong><span>پشتیبانی</span></div>
+        <div class="stat"><strong>5</strong><span>رشته</span></div>
+        <div class="stat"><strong>∞</strong><span>انگیزه</span></div>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="chat">💬 چت با VAHSHI</button>
+      <button class="tab" data-tab="plan">📅 برنامه هفتگی</button>
+      <button class="tab" data-tab="evaluate">📊 ارزیابی</button>
+      <button class="tab" data-tab="knowledge">📚 دانش کنکور</button>
+    </nav>
+
+    <!-- CHAT TAB -->
+    <section id="tab-chat" class="tab-panel active">
+      <div class="chat-wrap">
+        <div id="chat-box" class="chat-box">
+          <div class="msg vahshi">
+            <div class="avatar">🔥</div>
+            <div class="bubble">
+              <strong>VAHSHI:</strong>
+              سلام وحشی! 😎 من VAHSHI هستم، مشاور کنکورت.<br><br>
+              قبل از اینکه برنامه بدم، بذار بشناسمت:<br>
+              1. رشته‌ات چیه؟ (تجربی / ریاضی / انسانی / هنر / زبان)<br>
+              2. پایه‌ات چیه؟ (دهم، یازدهم، دوازدهم، پشت‌کنکوری)<br>
+              3. تا کنکور چقدر وقت داری؟<br>
+              4. روزی چند ساعت می‌خونی الان؟<br>
+              5. قوی‌ترین و ضعیف‌ترین درسات کدوماست؟<br>
+              6. هدفت چیه؟ (رشته/دانشگاه)<br><br>
+              خلاصه بگو، من سریع تحلیل می‌کنم و برنامه می‌دم!
+            </div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <textarea id="chat-input" rows="2" placeholder="اینجا بنویس وحشی... (Enter برای ارسال، Shift+Enter برای خط جدید)"></textarea>
+          <button id="send-btn">ارسال 🚀</button>
+        </div>
+        <div class="quick-chips">
+          <button class="chip" data-text="سلام وحشی من تجربی دوازدهمم، روزی 3 ساعت میخونم، زیستم ضعیفه و هدفم پزشکیه">من تجربی‌ام + معرفی</button>
+          <button class="chip" data-text="برام برنامه هفتگی بچین">برنامه می‌خوام 📅</button>
+          <button class="chip" data-text="استرس دارم، نمیتونم تمرکز کنم">استرس دارم 😰</button>
+          <button class="chip" data-text="بهترین منابع تجربی چیه؟">منابع پیشنهادی 📚</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN TAB -->
+    <section id="tab-plan" class="tab-panel">
+      <div class="card">
+        <h2>📅 برنامه هفتگی اختصاصی</h2>
+        <p class="muted">فیلدها رو پر کن، وحشی — همین الان برنامه‌ات رو می‌سازم.</p>
+        <div class="form-grid">
+          <label>رشته
+            <select id="plan-field">
+              <option value="تجربی">تجربی</option>
+              <option value="ریاضی">ریاضی</option>
+              <option value="انسانی">انسانی</option>
+              <option value="هنر">هنر</option>
+              <option value="زبان">زبان</option>
+            </select>
+          </label>
+          <label>پایه
+            <select id="plan-grade">
+              <option>دوازدهم</option>
+              <option>یازدهم</option>
+              <option>دهم</option>
+              <option>پشت‌کنکوری</option>
+            </select>
+          </label>
+          <label>ساعت مطالعه روزانه
+            <input id="plan-hours" type="number" min="1" max="16" value="6">
+          </label>
+          <label>دروس ضعیف (با کاما جدا کن)
+            <input id="plan-weak" placeholder="مثلا: زیست، شیمی">
+          </label>
+          <label>دروس قوی
+            <input id="plan-strong" placeholder="مثلا: ریاضی">
+          </label>
+        </div>
+        <button id="plan-btn" class="primary">برنامه‌ام رو بساز 🔥</button>
+        <div id="plan-tip" class="tip hidden"></div>
+        <div id="plan-result" class="markdown hidden"></div>
+      </div>
+    </section>
+
+    <!-- EVALUATE TAB -->
+    <section id="tab-evaluate" class="tab-panel">
+      <div class="card">
+        <h2>📊 ارزیابی سریع</h2>
+        <p class="muted">صادقانه جواب بده وحشی، من قضاوت نمی‌کنم — تحلیل می‌کنم.</p>
+        <div class="form-grid">
+          <label>رشته
+            <select id="ev-field">
+              <option>تجربی</option>
+              <option>ریاضی</option>
+              <option>انسانی</option>
+              <option>هنر</option>
+              <option>زبان</option>
+            </select>
+          </label>
+          <label>پایه
+            <select id="ev-grade">
+              <option>دوازدهم</option>
+              <option>یازدهم</option>
+              <option>دهم</option>
+              <option>پشت‌کنکوری</option>
+            </select>
+          </label>
+          <label>ماه تا کنکور
+            <input id="ev-months" type="number" value="10" min="1" max="24">
+          </label>
+          <label>ساعت مطالعه فعلی
+            <input id="ev-hours" type="number" value="4" min="0" max="16" step="0.5">
+          </label>
+          <label>تراز آزمون (اختیاری)
+            <input id="ev-taraz" type="number" placeholder="مثلا 5800">
+          </label>
+          <label>هدف
+            <input id="ev-target" placeholder="مثلا پزشکی تهران">
+          </label>
+          <label>دروس ضعیف
+            <input id="ev-weak" placeholder="زیست، فیزیک">
+          </label>
+          <label>دروس قوی
+            <input id="ev-strong" placeholder="شیمی">
+          </label>
+        </div>
+        <button id="ev-btn" class="primary">تحلیل کن وحشی 🧠</button>
+        <div id="ev-result" class="markdown hidden"></div>
+      </div>
+    </section>
+
+    <!-- KNOWLEDGE TAB -->
+    <section id="tab-knowledge" class="tab-panel">
+      <div class="card">
+        <h2>📚 دانش کنکور 1405</h2>
+        <p class="muted">⚠️ وحشی این اطلاعات تقریبیه — حتما <a href="https://sanjesh.org" target="_blank">sanjesh.org</a> رو چک کن.</p>
+        <div id="knowledge-box" class="markdown">در حال بارگذاری...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ساخته شده با ❤️ برای وحشی‌ها — VAHSHI v0.1.0 | <span id="footer-mode"></span></p>
+  </footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

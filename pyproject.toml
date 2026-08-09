@@ -1,0 +1,30 @@
+[project]
+name = "vahshi"
+version = "0.1.0"
+description = "VAHSHI — مشاور تحصیلی و برنامه‌ریز کنکور حرفه‌ای"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "VAHSHI Team"}]
+keywords = ["konkoor", "advisor", "education", "persian"]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "pydantic>=2.6.0",
+    "python-multipart>=0.0.9",
+    "jinja2>=3.1.3",
+    "python-dotenv>=1.0.0",
+    "openai>=1.30.0",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+bot = ["python-telegram-bot>=21.0"]
+dev = ["pytest>=8.0", "ruff>=0.4.0"]
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
