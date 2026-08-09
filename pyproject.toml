@@ -1,6 +1,6 @@
 [project]
 name = "vahshi"
-version = "0.1.0"
+version = "0.2.0"
 description = "VAHSHI — مشاور تحصیلی و برنامه‌ریز کنکور حرفه‌ای"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -16,6 +16,8 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "openai>=1.30.0",
     "httpx>=0.27.0",
+    "pyyaml>=6.0",
+    "python-telegram-bot>=21.0",
 ]
 
 [project.optional-dependencies]
