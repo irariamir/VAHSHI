@@ -26,6 +26,7 @@
     "prompt": "_internal: git backup to github — scripts/nightly_backup.sh",
     "delivery": "internal",
     "script": "scripts/nightly_backup.sh",
-    "enabled": true
+    "enabled": false,
+    "note": "غیرفعال شد به درخواست وحشی — حالت ساده بدون پوش خودکار (دستی با scripts/nightly_backup.sh میشه)"
   }
 ]
