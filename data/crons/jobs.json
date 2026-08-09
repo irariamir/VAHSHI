@@ -19,5 +19,13 @@
     "prompt": "_internal: فشرده‌سازی حافظه و بهبود اسکیل‌ها",
     "delivery": "internal",
     "enabled": true
+  },
+  {
+    "id": "nightly_github_backup",
+    "schedule": "daily 23:00",
+    "prompt": "_internal: git backup to github — scripts/nightly_backup.sh",
+    "delivery": "internal",
+    "script": "scripts/nightly_backup.sh",
+    "enabled": true
   }
 ]

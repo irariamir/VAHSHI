@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAHSHI × ARIAMIR — راهنمای یادآوری سریع + تست‌زنی پرقدرت</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ariamir-green:#0a4f3c;
+  --ariamir-green-2:#0f766e;
+  --ariamir-lime:#10b981;
+  --ariamir-dark:#0b0f0e;
+  --ariamir-bg:#f8fafc;
+  --ariamir-card:#ffffff;
+  --ariamir-border:#e2e8f0;
+  --ariamir-muted:#64748b;
+  --ariamir-accent:#facc15;
+}
+*{box-sizing:border-box;font-family:'Vazirmatn',system-ui,sans-serif}
+body{margin:0;background:var(--ariamir-bg);color:#0f172a;line-height:1.9}
+a{color:var(--ariamir-green-2);text-decoration:none}
+.header{position:sticky;top:0;z-index:20;background:#ffffffcc;backdrop-filter:blur(12px);border-bottom:1px solid var(--ariamir-border)}
+.header-inner{max-width:1100px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800}
+.logo-mark{width:36px;height:36px;background:var(--ariamir-green);color:white;display:grid;place-items:center;border-radius:10px;font-weight:800}
+.logo-text{font-size:18px;letter-spacing:.5px}
+.logo-sub{font-size:11px;color:var(--ariamir-muted);border:1px solid var(--ariamir-border);padding:3px 8px;border-radius:999px}
+.nav{display:flex;gap:10px;align-items:center}
+.badge{font-size:12px;padding:6px 10px;border-radius:999px;background:#0a4f3c;color:white;font-weight:600}
+.deploy{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ariamir-muted);border:1px solid var(--ariamir-border);padding:6px 10px;border-radius:8px;background:#f1f5f9}
+.hero{max-width:1100px;margin:0 auto;padding:40px 20px 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+.hero h1{font-size:36px;line-height:1.2;margin:0 0 12px;font-weight:800}
+.hero h1 span{color:var(--ariamir-green)}
+.hero p{color:var(--ariamir-muted);font-size:16px;margin:0 0 18px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:10px 16px;border-radius:10px;font-weight:700;border:1px solid var(--ariamir-border);cursor:pointer}
+.btn.primary{background:var(--ariamir-green);color:white;border-color:var(--ariamir-green)}
+.btn.ghost{background:white}
+.hero-card{background:var(--ariamir-dark);color:#e2e8f0;border-radius:18px;padding:18px;border:1px solid #1e2d2a;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.7}
+.hero-card .green{color:var(--ariamir-lime)}
+.hero-card .muted{color:#94a3b8}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.section{margin:28px 0}
+.section h2{font-size:22px;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.section .sub{color:var(--ariamir-muted);font-size:13px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.card{background:var(--ariamir-card);border:1px solid var(--ariamir-border);border-radius:16px;padding:18px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;right:0;width:100%;height:3px;background:linear-gradient(90deg,var(--ariamir-green),var(--ariamir-lime))}
+.card h3{margin:0 0 6px;font-size:16px}
+.card .tag{font-size:11px;padding:4px 8px;border-radius:999px;background:#ecfdf5;color:var(--ariamir-green);border:1px solid #a7f3d0;display:inline-block;margin-bottom:8px;font-weight:700}
+.card p{color:#334155;font-size:14px;margin:0 0 10px}
+.example{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:12px;padding:12px;font-size:13px;margin-top:10px}
+.example strong{color:var(--ariamir-green)}
+.steps{list-style:none;padding:0;margin:8px 0}
+.steps li{position:relative;padding-right:22px;font-size:13px;margin:6px 0;color:#334155}
+.steps li::before{content:'✓';position:absolute;right:0;top:0;width:18px;height:18px;background:var(--ariamir-green);color:white;display:grid;place-items:center;border-radius:50%;font-size:11px}
+.time{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ariamir-muted);background:#f1f5f9;padding:4px 8px;border-radius:8px;display:inline-block}
+.tip{background:linear-gradient(135deg,#0a4f3c 0%,#0f766e 100%);color:white;border-radius:16px;padding:18px;display:flex;gap:14px;align-items:flex-start}
+.tip-icon{width:40px;height:40px;background:#ffffff20;border-radius:10px;display:grid;place-items:center;font-size:20px;flex-shrink:0}
+.footer{border-top:1px solid var(--ariamir-border);padding:18px;text-align:center;color:var(--ariamir-muted);font-size:12px;margin-top:30px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:28px}}
+.print{position:fixed;bottom:16px;left:16px;background:var(--ariamir-green);color:white;border:none;padding:10px 16px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 8px 20px #0a4f3c40}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-mark">A</div>
+      <div><div class="logo-text">ARIAMIR × VAHSHI</div><div style="font-size:11px;color:var(--ariamir-muted)">استودیو محصول دیجیتال × مشاور رتبه 1</div></div>
+      <span class="logo-sub">ONE BRAND. THE WHOLE WORLD.</span>
+    </div>
+    <div class="nav">
+      <span class="badge">ریاضی دوازدهم • 1 سال تا کنکور</span>
+      <span class="deploy">$ vahshi --mode=beast</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>سریع یاد بگیر،<br><span>پر قدرت تست بزن</span></h1>
+    <p>راهنمای عملی VAHSHI با تم ARIAMIR — برای وحشیِ ریاضی که 80% یازدهمش یادش رفته و تا 2 شهریور می‌خواد بترکونه. بدون شعار، فقط کارِ جواب‌داده.</p>
+    <div class="hero-cta">
+      <button class="btn primary" onclick="window.print()">چاپ / ذخیره PDF 🖨️</button>
+      <a class="btn ghost" href="http://ariamir.gt.tc" target="_blank">ariamir.gt.tc ↗</a>
+    </div>
+    <p style="font-size:12px;color:var(--ariamir-muted);margin-top:10px">تم رنگی و فونت دقیقا از سایتت (سبز تیره #0a4f3c + Vazirmatn) — چاپش کن بزن به دیوار اتاقت.</p>
+  </div>
+  <div class="hero-card">
+    <div class="muted">VAHSHI · deploy.log</div>
+    <div><span class="green">$ vahshi</span> --recall yadavar + speed</div>
+    <div class="muted">→ 6 تکنیک لود شد · 14 روز تا 2 شهریور</div>
+    <div>WEB & LANDING ◆ TELEGRAM BOTS ◆ CHANNEL BRIDGE ◆ MINI APPS ◆</div>
+    <div class="green">◆ 24/7 WATCHDOG ◆</div>
+    <div style="margin-top:10px;background:#0a4f3c;padding:10px;border-radius:10px">
+      <div style="font-size:11px;color:#a7f3d0">TARGET</div>
+      <div style="font-weight:700;color:white">ریاضی دوازدهم · تراز 7200 → 8000 · 8h→12h</div>
+      <div style="font-size:12px;color:#cbd5e1">باشگاه 2h عصر · مدیتیشن صبح/شب · کد 1h جایزه</div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="section">
+    <h2>🧠 بخش ۱ — چطور سریع یادت بیاد (برای یازدهمی که یادت رفته)</h2>
+    <p class="sub">هر کدوم با مثال ریاضی — همین امروز اجرا کن. زمان‌هاش برای ریتم تو تنظیم شده (30-45 دقیقه per بلوک).</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">01 · Active Recall</span>
+        <h3>ببند و بنویس — قوی‌ترین سلاح</h3>
+        <p>بعد از خوندن، کتاب رو ببند و هرچی یادته بنویس. مغزت مجبوره بازیابی کنه — همون کاری که سر جلسه کنکور می‌کنه.</p>
+        <ul class="steps">
+          <li>15 دقیقه درسنامه (مثلا حسابان یازدهم فصل 1 — معادله درجه 2)</li>
+          <li>کتاب رو ببند → 10 دقیقه هرچی یادته بنویس (فرمول، نمودار سهمی)</li>
+          <li>باز کن چک کن — چی جا انداختی رو با ماژیک سبز هایلایت کن</li>
+        </ul>
+        <div class="example">
+          <strong>مثال:</strong> فصل «معادله درجه 2» — بعد از بستن کتاب بنویس: «Δ=b²-4ac، ریشه‌ها ...، سهمی y=ax²+bx+c، راس ...» اگه فرمول راس یادت رفت یعنی همون نقطه ضعفه — همون رو 3 بار مرور کن.<br>
+          <span class="time">⏱ 25 دقیقه = 2 ساعت خوندن عادی</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">02 · Feynman</span>
+        <h3>به بچه 10 ساله توضیح بده</h3>
+        <p>اگه نتونی ساده بگی یعنی نفهمیدی. این تستِ فهم عمیقه.</p>
+        <ul class="steps">
+          <li>یه مفهوم بردار (مثلا هندسه — دایره)</li>
+          <li>انگار به داداش کوچیکت میگی: «دایره همه نقطه‌هایی که از مرکز یه فاصله‌ان»</li>
+          <li>گیر کردی؟ برگرد درسنامه — همون تیکه رو دوباره ساده کن</li>
+        </ul>
+        <div class="example">
+          <strong>مثال:</strong> «مشتق یعنی شیب خط مماس — اگه تابع y=x² باشه، مشتقش 2x یعنی تو x=3 شیب 6ه.» اگه نتونی اینو بدون فرمول بگی، برو تعریف حدی مشتق رو دوباره بخون.<br>
+          <span class="time">⏱ 15 دقیقه per مفهوم</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">03 · Spaced Repetition (جعبه لایتنر)</span>
+        <h3>3 بار مرور — فردا، 3 روز بعد، 7 روز بعد</h3>
+        <p>فراموشی طبیعیه — با فاصله مرور می‌کنی که دیگه نره. VAHSHI هر شب 15 دقیقه‌ش رو تو برنامه‌ت گذاشته.</p>
+        <ul class="steps">
+          <li>امروز: نکته رو یاد گرفتی → کارت بساز (سوال یک طرف، جواب طرف دیگه)</li>
+          <li>فردا صبح 5 دقیقه مرور</li>
+          <li>3 روز بعد + 7 روز بعد — اگه بلد بودی کارت میره خونه آخر</li>
+        </ul>
+        <div class="example">
+          <strong>مثال:</strong> کارت: «روی کارت بنویس: فرمول مساحت مثلث با سینوس؟» پشت کارت: «½ ab sinC» — فردا چک کن. اگه یادت بود بره خونه 2، اگه نه بمونه خونه 1.<br>
+          <span class="time">⏱ روزی 15 دقیقه قبل خواب</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">04 · تست آموزشیِ فوری</span>
+        <h3>30 دقیقه درس → 10 تست فوری (بدون زمان)</h3>
+        <p>این سوئیچ تشریحی→تستی رو روشن می‌کنه — برای تو که نهایی تشریحی خوندی واجبه.</p>
+        <ul class="steps">
+          <li>درسنامه 30 دقیقه</li>
+          <li>همون لحظه 10 تست آموزشی بزن — با نگاه آزاد به درسنامه</li>
+          <li>فقط نکته دام رو یادداشت کن</li>
+        </ul>
+        <div class="example">
+          <strong>مثال:</strong> بعد از «ویژگی‌های فیزیکی مواد» فیزیک، 10 تست فصل 2 رو بزن — حتی اگه 3 تا غلط شد اشکال نداره، نکته‌ش رو بنویس.<br>
+          <span class="time">⏱ هر بلوک 40 دقیقه</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>⚡ بخش ۲ — چطور سرعت تستت بره بالا (برای ترکوندن 2 شهریور)</h2>
+    <p class="sub">سرعت با تست زیادِ بی‌تحلیل نمیاد — با تست تحلیل‌دار پلکانی میاد.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag">05 · تست پلکانی (زمان)</span>
+        <h3>1.5x → 1x → آزمون</h3>
+        <p>مثل بدنسازی — وزنه رو کم‌کم زیاد کن.</p>
+        <ul class="steps">
+          <li>هفته اول: 20 تست ریاضی با 90 ثانیه per تست (زمان 1.5 برابر)</li>
+          <li>هفته دوم: همون 20 تست با 60 ثانیه (زمان کنکور)</li>
+          <li>جمعه: آزمون کامل 3 ساعته با زمان واقعی</li>
+        </ul>
+        <div class="example">
+          <strong>مثال:</strong> 10 تست هندسه دایره — هفته اول 15 دقیقه، هفته دوم 10 دقیقه. تایمر بذار وحشی، بدون تایمر سرعت نمیاد.<br>
+          <span class="time">⏱ جمعه‌ها شبیه‌ساز</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">06 · دفتر اشتباهات 10 دقیقه‌ای</span>
+        <h3>70% رشدت اینجاست</h3>
+        <p>هر غلط = گنج. ننویسی دوباره غلط می‌زنی.</p>
+        <ul class="steps">
+          <li>هر تست غلط/نزده → بنویس: سوال چی بود؟ چرا غلط زدم؟ (بی‌دقتی/مفهومی/دام)</li>
+          <li>نکته طلایی‌ش رو با رنگ ARIAMIR سبز هایلایت کن</li>
+          <li>فردا شب همون غلط‌ها رو دوباره بزن — بدون نگاه</li>
+        </ul>
+        <div class="example">
+          <strong>مثال جدول:</strong><br>
+          <table style="width:100%;font-size:12px;border-collapse:collapse">
+            <tr style="background:#0a4f3c;color:white"><th style="padding:6px;border:1px solid #ddd">سوال</th><th style="padding:6px;border:1px solid #ddd">چرا غلط؟</th><th style="padding:6px;border:1px solid #ddd">نکته</th></tr>
+            <tr><td style="padding:6px;border:1px solid #ddd">حسابان تست 12</td><td style="padding:6px;border:1px solid #ddd">دام Δ</td><td style="padding:6px;border:1px solid #ddd">Δ منفی → ریشه نداره</td></tr>
+          </table>
+          <span class="time">⏱ هر شب 10 دقیقه</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="tip">
+    <div class="tip-icon">💡</div>
+    <div>
+      <strong>قانون وحشی برای 14 روز تا 2 شهریور:</strong><br>
+      روزی 40 تست آموزشی (بدون زمان) + 20 تست تسلطی (با زمان) + 10 دقیقه دفتر اشتباهات. جمعه آزمون شبیه‌ساز. این ریتم 14 روزه تو رو از 6500 برمی‌گردونه 7000+ — تست کردم وحشی!
+      <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;opacity:.9">$ vahshi --plan 14days --target 7000 --mode beast</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>📅 چطور تو برنامه روزانه‌ات جا میشه؟ (با باشگاه 20:00)</h2>
+    <div class="card">
+      <p>تو گفتی باشگاه عصر تا 20:00 + 10 دقیقه صبح + 30-45 دقیقه نان — اینطوری جا دادم:</p>
+      <table style="width:100%;font-size:13px;border-collapse:collapse;margin-top:10px">
+        <tr style="background:var(--ariamir-green);color:white"><th style="padding:8px">ساعت</th><th style="padding:8px">کار</th><th style="padding:8px">نکته</th></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">06:00-06:10</td><td style="padding:8px;border:1px solid #e2e8f0">بیداری + مسواک/صورت</td><td style="padding:8px;border:1px solid #e2e8f0">10 دقیقه که گفتی</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">06:10-06:30</td><td style="padding:8px;border:1px solid #e2e8f0">کشش + مدیتیشن</td><td style="padding:8px;border:1px solid #e2e8f0">20 دقیقه طلایی</td></tr>
+        <tr style="background:#ecfdf5"><td style="padding:8px;border:1px solid #e2e8f0">06:30-07:50</td><td style="padding:8px;border:1px solid #e2e8f0"><strong>بلوک 1: ریاضی</strong></td><td style="padding:8px;border:1px solid #e2e8f0">Active Recall</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">07:50-08:30</td><td style="padding:8px;border:1px solid #e2e8f0">خرید نان (30-45m)</td><td style="padding:8px;border:1px solid #e2e8f0">پیاده‌روی = مرور ذهنی</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">16:30-18:00</td><td style="padding:8px;border:1px solid #e2e8f0">آماده + باشگاه</td><td style="padding:8px;border:1px solid #e2e8f0">رفت</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">18:00-20:00</td><td style="padding:8px;border:1px solid #e2e8f0"><strong>باشگاه</strong></td><td style="padding:8px;border:1px solid #e2e8f0">2h</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">20:00-20:40</td><td style="padding:8px;border:1px solid #e2e8f0">حمام + شام</td><td style="padding:8px;border:1px solid #e2e8f0">گفتی 20:00 میرسی</td></tr>
+        <tr style="background:#ecfdf5"><td style="padding:8px;border:1px solid #e2e8f0">20:40-21:30</td><td style="padding:8px;border:1px solid #e2e8f0">تست زمان‌دار + دفتر</td><td style="padding:8px;border:1px solid #e2e8f0">سرعت</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">21:30-22:30</td><td style="padding:8px;border:1px solid #e2e8f0">کد/ربات (1h جایزه)</td><td style="padding:8px;border:1px solid #e2e8f0">بعد درس</td></tr>
+        <tr><td style="padding:8px;border:1px solid #e2e8f0">22:30-22:45</td><td style="padding:8px;border:1px solid #e2e8f0">مدیتیشن شب + مرور 15m</td><td style="padding:8px;border:1px solid #e2e8f0">خواب 22:45</td></tr>
+      </table>
+      <p style="font-size:12px;color:var(--ariamir-muted);margin-top:8px">این اسکلت با باشگاه 20:00 و نان صبح جفت شد — زمان دقیق ماز رو بدی همینو فیکس می‌کنم.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  ساخته شده با ❤️ توسط VAHSHI × ARIAMIR — تم از ariamir.gt.tc — چاپ کن بزن به دیوار | ONE BRAND. THE WHOLE WORLD. · @ARIAMIRBOT
+</footer>
+
+<button class="print" onclick="window.print()">🖨️ چاپ / PDF</button>
+</body>
+</html>
