@@ -53,3 +53,4 @@
 - امروز ۲۰ مرداد: مطالعه آزاد وحشی
 - حدود یک هفته از فردا: برنامه فقط سهمی (نه ساعت‌به‌ساعت)
 - بسته fa-ecosystem: research/konkur-mastery/fa-ecosystem
+- بسته خدمات ویژه فعال: services/premium-counseling

@@ -61,3 +61,4 @@ Load protocol: match user intent → read one SKILL.md → execute steps → opt
 ## meta
 | tehran-time-sync | قبل هر جواب وابسته به تاریخ/ساعت؛ کرون 00:00 تهران |
 | deep-fa-konkur-research | تحقیق اکوسیستم فارسی ماز/قلم‌چی/مشاوره |
+| premium-counseling | بسته ۲۱ قابلیتی مشاوره ویژه |

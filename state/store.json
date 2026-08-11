@@ -29,7 +29,9 @@
   "flags": {
     "github_source_of_truth": true,
     "awaiting_intake": false,
-    "hermes_mirror_ready": true
+    "hermes_mirror_ready": true,
+    "premium_counseling_pack": true,
+    "chat_no_code_default": true
   },
   "telegram": {
     "plans": -1004360036418,
