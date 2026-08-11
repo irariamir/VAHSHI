@@ -1,5 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.log
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+out/
+
+# Secrets / keys (from lean)
 .env
 **/.env
+*.pem
+id_ed25519
+vahshi_github
+keys/
+**/keys/
+
+# Media (from lean — heavy)
 *.pdf
 *.png
 *.jpg
@@ -7,17 +34,22 @@
 *.zip
 *.mp3
 *.mp4
-__pycache__/
-.venv/
-node_modules/
-*.pyc
-.DS_Store
-keys/
-**/keys/
+
+# App
+uploads/
+data/*.db
+data/*.sqlite
 state.db
 sessions/*.jsonl
 tools/telegram_study_bot/data/inbox/
 dashboard/exports/
-*.pem
-id_ed25519
-vahshi_github
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Arena
+.arena/
