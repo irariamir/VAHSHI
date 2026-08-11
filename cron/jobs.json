@@ -16,5 +16,13 @@
     "every": "every_5_meaningful_turns",
     "action": "silent-memory: compress USER/MEMORY if near limit; drop ephemeral",
     "created": "2026-08-09T00:00:00+03:30"
+  },
+  {
+    "name": "tehran-midnight-sync",
+    "every": "daily",
+    "at_local": "00:00",
+    "timezone": "Asia/Tehran",
+    "action": "python scripts/sync_tehran_time.py",
+    "description": "هر نیمه‌شب تهران clock.json را تازه کن"
   }
 ]

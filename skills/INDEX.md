@@ -57,3 +57,6 @@
 ---
 Load protocol: match user intent → read one SKILL.md → execute steps → optionally improve skill.
 | recall-fast-speed | بازیابی سریع یازدهم + افزایش سرعت و دقت تست |
+
+## meta
+| tehran-time-sync | قبل هر جواب وابسته به تاریخ/ساعت؛ کرون 00:00 تهران |
