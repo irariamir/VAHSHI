@@ -1,0 +1,20 @@
+[
+  {
+    "name": "nightly-session-hint",
+    "every": "daily",
+    "action": "If وحشی studied today, ask for 3-line report and run work-audit lightly",
+    "created": "2026-08-09T00:00:00+03:30"
+  },
+  {
+    "name": "weekly-plan-review",
+    "every": "weekly",
+    "action": "Review active plan, curate MEMORY.md, improve one skill from week's friction",
+    "created": "2026-08-09T00:00:00+03:30"
+  },
+  {
+    "name": "memory-curate",
+    "every": "every_5_meaningful_turns",
+    "action": "silent-memory: compress USER/MEMORY if near limit; drop ephemeral",
+    "created": "2026-08-09T00:00:00+03:30"
+  }
+]

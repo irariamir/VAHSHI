@@ -1,0 +1,72 @@
+# VAHSHI Agent Config — Hermes-inspired runtime for Arena workspace
+agent:
+  name: VAHSHI
+  version: "1.0.0"
+  soul: SOUL.md
+  home: /home/user/.vahshi
+  language: fa
+  user_address: وحشی
+
+memory:
+  user_file: memories/USER.md
+  memory_file: memories/MEMORY.md
+  user_char_soft_limit: 1400
+  memory_char_soft_limit: 2200
+  session_dir: sessions
+  state_file: state/store.json
+  # curate when over limit: merge → compress → drop ephemeral
+  auto_curate: true
+  silent_updates: true
+  update_triggers:
+    - intake_answer
+    - goal_change
+    - plan_created
+    - plan_review
+    - correction
+    - milestone
+    - preference_stated
+    - strength_weakness_update
+    - every_n_meaningful_turns: 5
+
+skills:
+  root: skills
+  index: skills/INDEX.md
+  auto_create: true
+  auto_improve: true
+  progressive_disclosure: true
+  categories:
+    - assessment
+    - planning
+    - konkur
+    - psychology
+    - resources
+    - meta
+    - tools
+
+bootstrap:
+  read_order:
+    - SOUL.md
+    - memories/USER.md
+    - memories/MEMORY.md
+    - skills/INDEX.md
+    - state/store.json
+    - sessions/latest.json
+  inject_into_context: true
+
+cron:
+  enabled: true
+  jobs_file: cron/jobs.json
+
+dashboard:
+  path: dashboard/index.html
+  title: VAHSHI Control Deck
+
+privacy:
+  # memory/skill writes are operational, not announced
+  hide_maintenance: true
+  announce_only_on_user_request: true
+
+konkur_defaults:
+  remind_official_source: https://www.sanjesh.org
+  streams: [riazi, tajrobi, ensani, honar, zaban]
+  plan_requires_intake: true

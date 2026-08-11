@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "bootstrapped_at": "2026-08-09T00:00:00+03:30",
+  "last_boot": "2026-08-09T18:26:05+03:30",
+  "session_count": 1,
+  "meaningful_turns": 4,
+  "intake": {
+    "complete": true,
+    "fields": {
+      "stream": "ریاضی",
+      "grade": "دوازدهم",
+      "goal": "رتبه ۱ / شریف — برند ARIAMIR",
+      "daily_hours": "شروع ۸ → هدف ۱۳-۱۵ (فعلی بعد نهایی: ۰ برای ۲ هفته)",
+      "strengths": "ظرفیت مطالعه سنگین قبلی ۱۳-۱۵س؛ انگیزه برند و هدف بزرگ؛ تجربه قلم‌چی",
+      "weaknesses": "ریست بعد نهایی؛ ترس فراموشی یازدهم؛ ضعف تست نسبت به نهایی؛ تراز ۶۵۰۰-۷۲۰۰ و افت بعد عید/جنگ؛ عدم ثبات فصل‌محور",
+      "time_to_konkur": "حدود ۱ سال",
+      "school_or_free": "ماز (تازه شروع از دیروز، هنوز نرفته) + قلم‌چی + از امسال ماز آزمون"
+    }
+  },
+  "stats": {
+    "plans_created": 2,
+    "skills_created": 1,
+    "skills_improved": 0,
+    "memory_writes": 17,
+    "tests_analyzed": 0,
+    "motivation_sessions": 1
+  },
+  "active_plan_id": "sprint-to-2-shahrivar",
+  "flags": {
+    "github_source_of_truth": true,
+    "awaiting_intake": false,
+    "hermes_mirror_ready": true
+  },
+  "telegram": {
+    "plans": -1004360036418,
+    "tricks": -1003925045778,
+    "sources": -1004471123964
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "bot": "@VAHSHIARBOT",
+  "groups": {
+    "sources": {"id": -1004471123964, "title": "VAHSHI_SOURSES", "role": "inbox_files"},
+    "plans": {"id": -1004360036418, "title": "VAHSHI_PLANS", "role": "approved_plans_only"},
+    "tricks": {"id": -1003925045778, "title": "VAHSHIAR_TRICKS", "role": "approved_tips_only"}
+  },
+  "rules": {
+    "never_auto_send_plans_or_tricks": true,
+    "require_user_approval_phrase": "بفرست پلن|بفرست تریک|ارسال کن"
+  }
+}
