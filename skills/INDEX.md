@@ -62,3 +62,5 @@ Load protocol: match user intent → read one SKILL.md → execute steps → opt
 | tehran-time-sync | قبل هر جواب وابسته به تاریخ/ساعت؛ کرون 00:00 تهران |
 | deep-fa-konkur-research | تحقیق اکوسیستم فارسی ماز/قلم‌چی/مشاوره |
 | premium-counseling | بسته ۲۱ قابلیتی مشاوره ویژه |
+| ariamir-design | طراحی با سیستم ariamir.gt.tc |
+| chat-light | چت سبک بدون کد/مسیر/JSON |

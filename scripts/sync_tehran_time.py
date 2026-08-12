@@ -54,6 +54,8 @@ def sync(source: str = "system") -> dict:
         payload["warning"] = "jdatetime not installed"
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    payload["chat_light"]=True
+    payload["chat_rules"]=["no_code","no_paths","no_json","tehran_time_first"]
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # also mirror under data/ if present
     alt = ROOT / "data" / "state" / "clock.json"

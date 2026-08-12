@@ -54,3 +54,5 @@
 - حدود یک هفته از فردا: برنامه فقط سهمی (نه ساعت‌به‌ساعت)
 - بسته fa-ecosystem: research/konkur-mastery/fa-ecosystem
 - بسته خدمات ویژه فعال: services/premium-counseling
+- برند بصری: brand/ از ariamir.gt.tc | اسکیل ariamir-design + chat-light
+- چت سبک اجباری؛ زمان تهران هر پیام
