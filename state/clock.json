@@ -1,17 +1,22 @@
 {
   "timezone": "Asia/Tehran",
   "utc_offset": "+03:30",
-  "gregorian": "2026-08-11",
-  "gregorian_time": "11:49:01",
-  "iso": "2026-08-11T11:49:01+03:30",
-  "weekday_en": "Tuesday",
+  "gregorian": "2026-08-12",
+  "gregorian_time": "22:18:52",
+  "iso": "2026-08-12T22:18:52+03:30",
+  "weekday_en": "Wednesday",
   "source": "system",
   "authority": "system",
-  "synced_at": "2026-08-11T11:49:01+03:30",
-  "jalali": "1405/05/20",
-  "jalali_time": "11:49:01",
-  "weekday_fa": "سه‌شنبه",
-  "jalali_year": 1405,
-  "jalali_month": 5,
-  "jalali_day": 20
+  "synced_at": "2026-08-12T22:18:52+03:30",
+  "jalali": null,
+  "weekday_fa": null,
+  "warning": "jdatetime not installed",
+  "chat_light": true,
+  "chat_rules": [
+    "no_code",
+    "no_paths",
+    "no_json",
+    "tehran_time_first"
+  ],
+  "plan_template": "brand/plan-template"
 }

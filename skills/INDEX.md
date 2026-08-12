@@ -64,3 +64,4 @@ Load protocol: match user intent → read one SKILL.md → execute steps → opt
 | premium-counseling | بسته ۲۱ قابلیتی مشاوره ویژه |
 | ariamir-design | طراحی با سیستم ariamir.gt.tc |
 | chat-light | چت سبک بدون کد/مسیر/JSON |
+| ariamir-plan-album | آلبوم ۳ تایی برنامه روزانه آریامیر |

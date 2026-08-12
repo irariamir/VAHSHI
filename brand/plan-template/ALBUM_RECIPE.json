@@ -1,0 +1,43 @@
+{
+  "name": "ariamir-daily-plan-album",
+  "version": "1.0",
+  "source_html": "brand/plan-template/template.html",
+  "style": "ariamir.gt.tc product dark",
+  "album": [
+    {
+      "file": "album-1-hero.png",
+      "section": "hero+stats+progress+marquee",
+      "caption_short": "۱/۳  شروع روز"
+    },
+    {
+      "file": "album-2-tasks.png",
+      "section": "task board",
+      "caption_short": "۲/۳  لیست کارها"
+    },
+    {
+      "file": "album-3-extra.png",
+      "section": "breakdown+tips",
+      "caption_short": "۳/۳  سهم زمان + قوانین"
+    }
+  ],
+  "render": {
+    "viewport": [
+      1200,
+      2400
+    ],
+    "device_scale_factor": 2,
+    "force_rv_in": true,
+    "date_field": "today"
+  },
+  "telegram": {
+    "group": "VAHSHI_PLANS",
+    "method": "sendMediaGroup",
+    "short_captions": true
+  },
+  "chat_rules": [
+    "tehran_time_first",
+    "no_code",
+    "no_paths",
+    "no_json_dumps"
+  ]
+}

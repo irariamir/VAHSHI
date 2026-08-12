@@ -56,3 +56,7 @@
 - بسته خدمات ویژه فعال: services/premium-counseling
 - برند بصری: brand/ از ariamir.gt.tc | اسکیل ariamir-design + chat-light
 - چت سبک اجباری؛ زمان تهران هر پیام
+- قالب رسمی برنامه روزانه: brand/plan-template (HTML آریامیر + آلبوم ۳ تایی)
+- ارسال پلن: فقط آلبوم ۳ عکس با کپشن خیلی کوتاه؛ پیام‌های قدیمی پلن پاک شوند
+- اسکیل ariamir-plan-album + ariamir-design + chat-light فعال
+- آخرین همگام‌سازی قالب: 2026-08-12 22:50 تهران
